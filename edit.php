@@ -53,7 +53,8 @@
                 <small id="phoneHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
-            <button type="submit" name="submit" class="btn btn-success btn-block">Save Changes</button>
+            <a href="viewrecords.php" class="btn btn-default">Back to List</a>
+            <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
         </form>
 
     <?php } ?> <!-- close else statment -->
