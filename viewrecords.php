@@ -1,5 +1,6 @@
 <?php 
-    $page = 'View Attendees';
+    $title = 'View Attendees';
+    $page = "viewrecords";
     require_once 'includes/header.php';
     require_once 'db/conn.php';
 
@@ -12,7 +13,7 @@
             <th>#</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Date of Birth</th>
+            <th>Specialty</th>
             <th>Actions</th>
         </tr>
         <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
@@ -22,7 +23,11 @@
                 <td><?php echo $r['firstname'] ?></td>
                 <td><?php echo $r['lastname'] ?></td>
                 <td><?php echo $r['name'] ?></td>
-                <td><a href="view.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-primary">View</a></td>
+                <td>
+                    <a href="view.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-primary">View</a>
+                    <a href="edit.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-warning">Edit</a>
+                    <a onclick="return confirm('Are you sure you want to delete <?php echo ' '. $r['firstname'] . ' ' . $r['lastname'] . ' '; ?> from this record?');" href="delete.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
 
         <?php } ?>

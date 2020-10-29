@@ -1,5 +1,6 @@
 <?php 
-    $page = 'Home';
+    $title = 'Home';
+    $page = "index";
     require_once 'includes/header.php';
     require_once 'db/conn.php';
 
@@ -19,15 +20,15 @@
     <form method="post" action="success.php">
         <div class="form-group">
             <label for="firstname">First name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname">
+            <input required type="text" class="form-control" id="firstname" name="firstname">
         </div>
         <div class="form-group">
             <label for="lastname">Last name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname">
+            <input required type="text" class="form-control" id="lastname" name="lastname">
         </div>
         <div class="form-group">
             <label for="dob">Date of Birth</label>
-            <input type="text" class="form-control" id="dob" name="dob">
+            <input required type="text" class="form-control" id="dob" name="dob">
         </div>
         <div class="form-group">
             <label for="specialty">Area of Expertise</label>
@@ -39,7 +40,7 @@
         </div>
         <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">

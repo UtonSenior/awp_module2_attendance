@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Attendance - <?php echo $page; ?></title>
+        <title>Attendance - <?php echo $title; ?></title>
     </head>
     <body>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <!-- Brand/logo -->
-                <a class="navbar-brand mylogo" href="index.php">IT Conference</a>
+                <a class="navbar-brand" style='color:yellow;background' href="index.php">IT Conference</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -24,14 +24,15 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <!-- Links -->
                     <ul class="navbar-nav">
-                        <li class="nav-item <?php if($page == 'array'){ echo 'active'; }?>">
+                        <li class="nav-item <?php if($page == 'index'){ echo 'active'; }?>">
                         <a class="nav-link" href="index.php">Home</a>
                         </li>
 
-                        <li class="nav-item <?php if($page == 'function'){ echo 'active'; }?>">
+                        <li class="nav-item <?php if($page == 'viewrecords'){ echo 'active'; }?>">
                         <a class="nav-link" href="viewrecords.php">View Attendees</a>
                         </li>
                         
                     </ul>
                 </div>
             </nav> 
+            <br>

@@ -5,7 +5,8 @@
 
     // Get Attendee by ID
     if(!isset($_GET['id'])){
-        echo "<h1 class='text-danger'>Please check details and try again</h1>";        
+        //echo "<h1 class='text-danger'>Please check details and try again</h1>";
+        include 'includes/errormessage.php';        
     }else{
         $id = $_GET['id'];
         $result = $crud->getAttendeeDetails($id);
@@ -32,6 +33,10 @@
                 </p>
             </div>
         </div>
+        <br>
+            <a href="viewrecords.php" class="btn btn-info">Back to List</a>
+            <a href="edit.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-warning">Edit</a>
+            <a onclick="return confirm('Are you sure you want to delete <?php echo ' '. $result['firstname'] . ' ' . $result['lastname'] . ' '; ?> from this record?');" href="delete.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-danger">Delete</a>
 
     <?php } ?>
 
