@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '18c2162d3584ec5a7db68cf3f503036d3ba81d42',
+    'reference' => 'ba6bfe99e06ffbaa603fc459394749f4cd7c8492',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,41 +18,95 @@
       'aliases' => 
       array (
       ),
-      'reference' => '18c2162d3584ec5a7db68cf3f503036d3ba81d42',
+      'reference' => 'ba6bfe99e06ffbaa603fc459394749f4cd7c8492',
     ),
-    'sendgrid/php-http-client' => 
+    'elastic-email/web-api-client' => 
     array (
-      'pretty_version' => '3.12.0',
-      'version' => '3.12.0.0',
+      'pretty_version' => 'v1.0.4',
+      'version' => '1.0.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '22a3dc4dac617046004bbad2d329c0e0d9be7daf',
+      'reference' => 'f08a8aba3bf008c11922206ca5e87fe50f194c7d',
     ),
-    'sendgrid/sendgrid' => 
+    'guzzlehttp/guzzle' => 
     array (
-      'pretty_version' => '7.8.5',
-      'version' => '7.8.5.0',
+      'pretty_version' => '6.5.5',
+      'version' => '6.5.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a4537666f29cf51c511ee896f4425764c74d8a63',
+      'reference' => '9d4290de1cfd701f38099ef7e183b64b4b7b0c5e',
     ),
-    'sendgrid/sendgrid-php' => 
+    'guzzlehttp/promises' => 
     array (
-      'replaced' => 
-      array (
-        0 => '*',
-      ),
-    ),
-    'starkbank/ecdsa' => 
-    array (
-      'pretty_version' => '0.0.4',
-      'version' => '0.0.4.0',
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '9369d35ed9019321adb4eb9fd3be21357d527c74',
+      'reference' => '60d379c243457e073cff02bc323a2a86cb355631',
+    ),
+    'guzzlehttp/psr7' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
+    ),
+    'psr/http-message' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
+    ),
+    'psr/http-message-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'ralouphie/getallheaders' => 
+    array (
+      'pretty_version' => '3.0.3',
+      'version' => '3.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '120b605dfeb996808c31b6477290a714d356e822',
+    ),
+    'symfony/polyfill-intl-idn' => 
+    array (
+      'pretty_version' => 'v1.20.0',
+      'version' => '1.20.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3b75acd829741c768bc8b1f84eb33265e7cc5117',
+    ),
+    'symfony/polyfill-intl-normalizer' => 
+    array (
+      'pretty_version' => 'v1.20.0',
+      'version' => '1.20.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '727d1096295d807c309fb01a851577302394c897',
+    ),
+    'symfony/polyfill-php72' => 
+    array (
+      'pretty_version' => 'v1.20.0',
+      'version' => '1.20.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cede45fcdfabdd6043b3592e83678e42ec69e930',
     ),
   ),
 );

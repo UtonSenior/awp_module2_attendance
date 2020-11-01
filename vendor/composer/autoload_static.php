@@ -4,64 +4,84 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit77673c8ff44bd28d9921d5e331dde4aa
+class ComposerStaticInit4fa2e2175124f62a73c1e4d06c4674a2
 {
     public static $files = array (
-        '79f66bc0a1900f77abe4a9a299057a0a' => __DIR__ . '/..' . '/starkbank/ecdsa/src/ellipticcurve.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
-            'SendGrid\\Stats\\' => 15,
-            'SendGrid\\Mail\\' => 14,
-            'SendGrid\\Helper\\' => 16,
-            'SendGrid\\EventWebhook\\' => 22,
-            'SendGrid\\Contacts\\' => 18,
-            'SendGrid\\' => 9,
+            'Symfony\\Polyfill\\Php72\\' => 23,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'SendGrid\\Stats\\' => 
+        'Symfony\\Polyfill\\Php72\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/stats',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
         ),
-        'SendGrid\\Mail\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/mail',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'SendGrid\\Helper\\' => 
+        'Symfony\\Polyfill\\Intl\\Idn\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/helper',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
         ),
-        'SendGrid\\EventWebhook\\' => 
+        'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/eventwebhook',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'SendGrid\\Contacts\\' => 
+        'GuzzleHttp\\Psr7\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/contacts',
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'SendGrid\\' => 
+        'GuzzleHttp\\Promise\\' => 
         array (
-            0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
     );
 
+    public static $fallbackDirsPsr0 = array (
+        0 => __DIR__ . '/..' . '/elastic-email/web-api-client/src',
+    );
+
     public static $classMap = array (
-        'BaseSendGridClientInterface' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'SendGrid' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
-        'TwilioEmail' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/TwilioEmail.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit77673c8ff44bd28d9921d5e331dde4aa::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit77673c8ff44bd28d9921d5e331dde4aa::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit77673c8ff44bd28d9921d5e331dde4aa::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4fa2e2175124f62a73c1e4d06c4674a2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4fa2e2175124f62a73c1e4d06c4674a2::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit4fa2e2175124f62a73c1e4d06c4674a2::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit4fa2e2175124f62a73c1e4d06c4674a2::$classMap;
 
         }, null, ClassLoader::class);
     }
