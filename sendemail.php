@@ -39,7 +39,7 @@
                 $result=curl_exec ($ch);
                 curl_close ($ch);
                 
-                echo $result;
+                //echo $result;
 
             } catch (Exception $e) {
                 echo 'Email exception Caught : ' . $e->getMessage() . "\n";
