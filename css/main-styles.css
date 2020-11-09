@@ -1,0 +1,48 @@
+body{
+  background-color: lightyellow;
+}
+
+#it-heading {
+    font-size: 26px;
+  }
+  
+  @media (min-width: 576px) {
+    #it-heading {
+      font-size: 30px;
+    }
+  }
+  
+  #col-top {
+    padding-top: 80px;
+    background-color: rgb(230,227,227);
+  }
+  
+  #icons_ {
+    color: white;
+  }
+
+  .login-card {
+    max-width: 350px;
+    padding: 10px 40px;
+    background-color: #F7F7F7;
+    margin: 0 auto 25px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .login-card .profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .login-card .col-btn{
+    margin-top: 10px;
+  }
+  
+
+    
+  
+  

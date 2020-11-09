@@ -12,14 +12,19 @@
         <meta name="Description" content="Enter your description here"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+        <!-- MDBootstrap Datatables  -->
+        <link href="css/datatables.min.css" rel="stylesheet">  
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="css/style.css">
+      
+        <link rel="stylesheet" href="css/main-styles.css">
+
         <title>Attendance - <?php echo $title; ?></title>
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <!-- Brand/logo -->
+        
+        <nav class="navbar navbar-dark navbar-expand-md bg-primary shadow navigation-clean-button">
+            <div class="container">   
+            <!-- Brand/logo -->
                 <a class="navbar-brand" style='color:yellow;background' href="index.php">IT Conference</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -55,5 +60,7 @@
                         <?php }?>                    
                     </ul>
                 </div>
-            </nav> 
+            </div>
+        </nav> 
+        <div class="container">
             <br>

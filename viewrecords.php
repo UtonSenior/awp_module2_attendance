@@ -8,31 +8,41 @@
     // Get all Attendees
     $results = $crud->getAttendees();
 ?>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <tr style="background-color:grey; color:white">
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th class="d-none  d-sm-block d-sm-none d-md-block">Specialty</th>
-                <th style="text-align:center">Actions</th>
-            </tr>
-            <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
+    <div class="container" id="form" style="margin-bottom: 55px;">
+        <div class="row">
+            <div class="col" style="background-color: rgb(247,247,247);">
+                <div class="table-responsive">
+                    <table id="attendees-list"  class="table table-striped">
+                        <thead>
+                            <tr >
+                                <th>#</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th class="d-none  d-sm-block">Specialty</th>
+                                <th style="text-align:center">Actions</th>
+                            </tr>
+                        </thead>
+                        <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
 
-                <tr>
-                    <td><?php echo $r['attendee_id'] ?></td>
-                    <td><?php echo $r['firstname'] ?></td>
-                    <td><?php echo $r['lastname'] ?></td>
-                    <td class="d-none d-sm-block d-sm-none d-md-block"><?php echo $r['name'] ?></td>
-                    <td style="text-align:center">
-                        <a href="view.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-primary">View</a>
-                        <a href="edit.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-warning">Edit</a>
-                        <a onclick="return confirm('Are you sure you want to delete <?php echo ' '. $r['firstname'] . ' ' . $r['lastname'] . ' '; ?> from this record?');" href="delete.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-danger">Delete</a>
-                    </td>
-                </tr>
+                            <tr>
+                                <td><?php echo $r['attendee_id'] ?></td>
+                                <td><?php echo $r['firstname'] ?></td>
+                                <td><?php echo $r['lastname'] ?></td>
+                                <td class="d-none d-sm-block"><?php echo $r['name'] ?></td>
+                                <td style="text-align:center">
+                                    <div class="btn-group" role="group">
+                                        <a href="view.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-primary"><i class="fa fa-eye"></i></a>
+                                        <a href="edit.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a>
+                                        <a href="confirmdelete.php?id=<?php echo $r['attendee_id'] ?>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
 
-            <?php } ?>
-        </table>
+                        <?php } ?>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
 <?php 

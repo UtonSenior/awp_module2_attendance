@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'ba6bfe99e06ffbaa603fc459394749f4cd7c8492',
+    'reference' => 'a541a6432357ba821fdf4ef57bd2ade7d78f38d1',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'ba6bfe99e06ffbaa603fc459394749f4cd7c8492',
+      'reference' => 'a541a6432357ba821fdf4ef57bd2ade7d78f38d1',
     ),
     'elastic-email/web-api-client' => 
     array (

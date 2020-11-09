@@ -1,18 +1,15 @@
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         
-            <footer class="bg-light navbar-dark pt-4 ">
-                <div class="container-fluid">
-                    <div class="footer-copyright text-center py-3">
-                        <?php                     
-                            echo "<p style='color: black';>Copyright &copy; 2020-" . date("Y") . " Uton Senior</p>";                
-                        ?>
-                    </div>
+        </div>
+        <div class="text-white bg-primary footer-clean fixed-bottom">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <?php                     
+                        echo "Copyright &copy; IT Conference Attendance " . date("Y") . "";                
+                    ?>
                 </div>
-            </footer>
+            </div>
+        </footer>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -20,6 +17,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- MDBootstrap Datatables  -->
+        <script type="text/javascript" src="script/datatables.min.js"></script>
 
         <script>
             $( function() {
@@ -29,6 +28,10 @@
                     yearRange: "-100: +0",
                     dateFormat: "yy-mm-dd"
                 });                
+            } );
+
+            $(document).ready( function () {
+                $('#attendees-list').DataTable();
             } );
         </script>
     </body>
