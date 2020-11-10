@@ -3,12 +3,12 @@
 
     class SendEmail{
         public static function SendMail($to, $subject, $content){
-            $key = 'BE48339710469F4598218A7E17D7A699D762C54F73B7095C0C52E3D4E8BFB2491C4F4DDEE9B4837193294315A72D07DB';
+            $key = '2BE4E9C5198D81F7130E05983C61AD01B3FE4EE95C2E4C7DF9DE840B1CBDAC8FC0DF01B52A10FBD68F54B6D55A50DE53';
             $url = 'https://api.elasticemail.com/v2/email/send';
 
             try {
 
-                $email = array('from' => 'utonseniormbhs@gmail.com',
+                $email = array('from' => 'utonblue@yahoo.com',
                 'fromName' => 'IT Conference',
                 'apikey' => $key,
                 'subject' => $subject,
