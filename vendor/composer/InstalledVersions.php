@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'a541a6432357ba821fdf4ef57bd2ade7d78f38d1',
+    'reference' => 'ec21cdddc3b02340ee32eb682ab41b12d7702a82',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'a541a6432357ba821fdf4ef57bd2ade7d78f38d1',
+      'reference' => 'ec21cdddc3b02340ee32eb682ab41b12d7702a82',
     ),
     'elastic-email/web-api-client' => 
     array (
