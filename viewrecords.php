@@ -8,7 +8,7 @@
     // Get all Attendees
     $results = $crud->getAttendees();
 ?>
-    <div class="container" id="form" style="margin-bottom: 55px;">
+    <div class="container" id="form" style="margin-bottom: 80px;">
         <div class="row">
             <div class="col" style="background-color: rgb(247,247,247);">
                 <div class="table-responsive">
